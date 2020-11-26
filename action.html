@@ -1,0 +1,208 @@
+<html>
+
+<head>
+
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description du site "
+    content="Visionnez des films et des séries télé de movie Planet en ligne ou en diffusion en continu directement sur votre téléviseur connecté, console de jeux, PC, Mac, appareil ...">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <!-- Mon CSS -->
+
+  <link rel="icon" href="images/logo2.png " style="width: 50px;height: 50px;">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <title>movie website</title>
+</head>
+
+<body>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+  </script>
+  <script type="text/javascript" src="script.js"></script>
+
+  <!-------------------------------------------------Navbar------------------------------------------------------------------------>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed top">
+
+    <b class="navbar-brand " href="#haut">
+      <img src="images/logo3.png"></b>
+
+    </form>
+    <button class="navbar-toggler bg-light" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav">
+        <li class="nav-item ">
+          <a class="nav-link " href="index.html"> Acceuil </a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Catégories
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="action.html"><img src="https://img.icons8.com/ios-glyphs/30/000000/assault-rifle.png"/> ACTION</a>
+            <a class="dropdown-item" href="horreur.html"><img src="https://img.icons8.com/windows/32/000000/scream.png"/> HORREUR</a>
+            <a class="dropdown-item" href="famille.html"><img
+                src="https://img.icons8.com/small/32/000000/family--v1.png" /> FAMILLE</a>
+            <a class="dropdown-item" href="romantique.html">
+              <img src="https://img.icons8.com/ios-glyphs/30/000000/hand-drawn-heart.png" /> ROMANTIQUE</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#Contact">Contact </a>
+        </li>
+        <li class="nav-item">
+          <a id="SignIn" class="nav-link" href="signin.html">Sign In</a>
+        </li>
+      </ul>
+
+
+    </div>
+   <!-- Button trigger modal -->
+   <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">
+    Inscription gratuite!
+  </button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <B class="modal-title" id="exampleModalLabel">Inscription</B>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <B>Nom:</B> <input name="nom" size="15" maxlength="30"> <br><br>
+          <B>Prénom:</B> <input name="prenom" size="15" maxlength="30"> <br><br>
+          <B>Sexe:</B> <input type="radio" name="nom-radio" value="Homme"> Homme
+          <input type="radio" name="nom-radio" value="Femme"> Femme <br><br>
+         <B>Courriel:</B>  <input name="Courriel" size="30" maxlength="60" placeholder="exemple@gmail.com"> <br><br>
+          <B>Mot de passe:</B> <input type="password" name="password" size="15" maxlength="30"> <br><br>
+          <B>Confirmer:</B> <input type="password" name="password" size="15" maxlength="30"> <br><br>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+          <button type="button" class="btn btn-primary">Enregistrer</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!---modal--------->
+</nav>
+  <article>
+    <h1>Les films d'action </h1>
+  <div class="row row-cols-1 row-cols-md-3">
+    <div class="col mb-4">
+      <div class="card h-100">
+        <img src="images/recent2.jpg" class="card-img-top" >
+        <div class="card-body">
+          <h5 class="card-title">EXTRACTION</h5>
+          <p class="card-text"> 1h 56min / Action, Thriller<br>De:Sam Hargrave<br>Avec:Chris Hemsworth, Rudhraksh Jaiswal, Randeep Hooda<br>SYNOPSIS ET DÉTAILS:
+            Tyler Rake est un mercenaire intrépide qui travaille dans l'ombre. Alors qu'il n'a plus rien à perdre, il est chargé par un puissant caïd mafieux, pour l'heure incarcéré, de sauver son fils qui a été enlevé. Mais dans le milieu glauque de la pègre, où se côtoient marchands d'armes et narcotrafiquants, la mission ultra-périlleuse de Rake frôle l'impossible. Et la vie du mercenaire et du jeune garçon risque d'en être bouleversée à jamais</p>
+          <button type="button" class="btn btn-secondary">Regarder maintenant</button>
+          <button type="button" class="btn btn-success">Télécharger</button>
+        </div>
+      </div>
+    </div>
+    <div class="col mb-4">
+      <div class="card h-100">
+        <img src="images/action2.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">EARTHQUAKE BIRD</h5>
+          <p class="card-text">1h 47min / Thriller, Drame<BR>De:Wash Westmoreland<BR>Avec:Alicia Vikander, Riley Keough, Jack Huston<BR>SYNOPSIS ET DÉTAILS:
+            Dans le Tokyo du début des années 90, deux femmes tombent amoureuses du même homme, et de dangereuses conséquences en découlent.</p>
+          <button type="button" class="btn btn-secondary">Regarder maintenant</button>
+          <button type="button" class="btn btn-success">Télécharger</button>
+        </div>
+      </div>
+    </div>
+    <div class="col mb-4">
+      <div class="card h-100">
+        <img src="images/action3.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">THE COURIER</h5>
+          <p class="card-text"> 1h 37min / Thriller, Action, Drame<BR>De:Zackary Adler<BR>Avec:Gary Oldman, Olga Kurylenko, Dermot Mulroney<BR>SYNOPSIS ET DÉTAILS:
+            Une coursière interrompt ses livraisons quotidiennes quand elle découvre que son dernier colis contient une bombe à destination d'un témoin d'un meurtre commis par un seigneur du crime. Elle se lance, alors, dans une course contre la montre afin de sauver les cibles d'agents corrompus de la CIA et de mercenaires russes.</p>
+          <button type="button" class="btn btn-secondary">Regarder maintenant</button>
+          <button type="button" class="btn btn-success">Télécharger</button>
+        </div>
+      </div>
+    </div>
+    <div class="col mb-4">
+      <div class="card h-100">
+        <img src="images/action4.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">THE KARATE KID</h5>
+          <p class="card-text">1h 52min / Action, Drame<BR>De:John G. Avildsen<BR>Avec Ralph Macchio, Pat Morita, Robyn Lively<BR>SYNOPSIS ET DÉTAILS:
+            Kresse, le propriétaire du Dojo Cobra Kai, a été vaincu par le vieux maître Miyagi. Il abandonne alors son entreprise au peu scrupuleux Terry Silver qui lui promet une revanche éclatante sur Miyagi et son disciple Daniel...</p>
+          <button type="button" class="btn btn-secondary">Regarder maintenant</button>
+          <button type="button" class="btn btn-success">Télécharger</button>
+        </div>
+      </div>
+    </div>
+    <div class="col mb-4">
+      <div class="card h-100">
+        <img src="images/action7.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">FAST & FURIOUS : HOBBS & SHAW</h5>
+          <p class="card-text">2h 16min / Action<BR>De:David Leitch<BR>Avec:Dwayne Johnson, Jason Statham, Idris Elba<BR>SYNOPSIS ET DÉTAILS:
+            Depuis que Hobbs, fidèle agent de sécurité au service diplomatique des Etats-Unis, combatif mais droit, et Shaw, un homme sans foi ni loi, ancien membre de l’élite militaire britannique, se sont affrontés en 2015 dans Fast & Furious 7 ; les deux hommes font tout ce qu’ils peuvent pour se nuire l’un à l’autre.
+            Mais lorsque Brixton, un anarchiste génétiquement modifié, met la main sur une arme de destruction massive après avoir battu le meilleur agent du MI6 qui se trouve être la sœur de Shaw. Les deux ennemis de longue date vont devoir alors faire équipe pour faire tomber le seul adversaire capable de les anéantir. </p>
+          <button type="button" class="btn btn-secondary">Regarder maintenant</button>
+          <button type="button" class="btn btn-success">Télécharger</button>
+        </div>
+      </div>
+    </div>
+    <div class="col mb-4">
+      <div class="card h-100">
+        <img src="images/action6.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">PRINCE OF PERSIA</h5>
+          <p class="card-text">2h 06min / Aventure, Action<BR>De:Mike Newell<BR>Avec:Jake Gyllenhaal, Gemma Arterton, Ben Kingsley<BR>SYNOPSIS ET DÉTAILS:
+            A partir de 10 ans
+            Un prince rebelle est contraint d'unir ses forces avec une mystérieuse princesse pour affronter ensemble les forces du mal et protéger une dague antique capable de libérer les Sables du temps, un don de dieu qui peut inverser le cours du temps et permettre à son possesseur de régner en maître absolu sur le monde.</p>
+          <button type="button" class="btn btn-secondary">Regarder maintenant</button>
+          <button type="button" class="btn btn-success">Télécharger</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</article>
+</body>
+<footer>
+  <div id="Contact">
+    <h4>Contactez nous!</h4><br>
+    <i class="fa fa-phone"></i> 123 456-7890<br>
+    <i class="fa fa-envelope"></i> movieplanet@gmail.com<br>
+    <a href="#"><i class="fa fa-facebook"></i></a>
+    <a href="#"><i class="fa fa-instagram"></i></a>
+    <a href="#"><i class="fa fa-twitter"></i></a>
+    <a href="#"><i class="fa fa-youtube"></i></a>
+  </div>
+  <div class=footer-bottom>
+    &copy;Copyright Movie Planet-tous droits réservés
+  </div>
+</footer>
+
+</html>

@@ -1,0 +1,87 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-weight: bold;
+  color: beige;
+}
+
+
+body {
+  background-image: url(images/background3.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.navbar-brand img {
+
+  width: 150px;
+  height: 50px;
+}
+
+.navbar-nav {
+
+  margin-right: auto;
+
+
+}
+
+.nav-item {
+  margin-left: 40px;
+}
+
+article {
+  margin: 60px;
+}
+
+article img {
+  width: 200px;
+  height: 400px;
+  margin-bottom: 10px;
+
+  border: none;
+ 
+}
+
+footer {
+  background: #343A40;
+  text-align: center;
+  overflow: auto;
+  clear: both;
+  color: aliceblue;
+}
+
+
+
+.footer-bottom {
+  background: rgb(75, 80, 85);
+  height: 30px;
+  text-align: center;
+  color: aliceblue;
+  clear: both;
+}
+ #signIn{
+color:rgb(142, 233, 163);
+
+}
+.form-control{
+
+  width: 300px;
+  margin-left: 400px;
+}
+h3{
+font-size: 20px;
+color: azure;
+}
+.checkbox label{
+color: azure;
+}
+
+
+
+

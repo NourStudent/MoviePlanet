@@ -1,0 +1,207 @@
+<html>
+
+<head>
+
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description du site "
+    content="Visionnez des films et des séries télé de movie Planet en ligne ou en diffusion en continu directement sur votre téléviseur connecté, console de jeux, PC, Mac, appareil ...">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <!-- Mon CSS -->
+
+  <link rel="icon" href="images/logo2.png " style="width: 50px;height: 50px;">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <title>movie website</title>
+</head>
+
+<body>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+  </script>
+  <script type="text/javascript" src="script.js"></script>
+
+  <!-------------------------------------------------Navbar------------------------------------------------------------------------>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed top">
+
+    <b class="navbar-brand " href="index.html">
+      <img src="images/logo3.png"></b>
+
+    </form>
+    <button class="navbar-toggler bg-light" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav">
+        <li class="nav-item ">
+          <a class="nav-link " href="index.html"> Acceuil </a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Catégories
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="action.html"><img src="https://img.icons8.com/ios-glyphs/30/000000/assault-rifle.png"/> ACTION</a>
+            <a class="dropdown-item" href="horreur.html"><img src="https://img.icons8.com/windows/32/000000/scream.png"/> HORREUR</a>
+            <a class="dropdown-item" href="famille.html"><img
+                src="https://img.icons8.com/small/32/000000/family--v1.png" /> FAMILLE</a>
+            <a class="dropdown-item" href="romantique.html">
+              <img src="https://img.icons8.com/ios-glyphs/30/000000/hand-drawn-heart.png" /> ROMANTIQUE</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#Contact">Contact </a>
+        </li>
+        <li class="nav-item">
+          <a id="SignIn" class="nav-link" href="signin.html">Sign In</a>
+        </li>
+      </ul>
+
+
+    </div>
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">
+      Inscription gratuite!
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <B class="modal-title" id="exampleModalLabel">Inscription</B>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <B>Nom:</B> <input name="nom" size="15" maxlength="30"> <br><br>
+            <B>Prénom:</B> <input name="prenom" size="15" maxlength="30"> <br><br>
+            <B>Sexe:</B> <input type="radio" name="nom-radio" value="Homme"> Homme
+            <input type="radio" name="nom-radio" value="Femme"> Femme <br><br>
+           <B>Courriel:</B>  <input name="Courriel" size="30" maxlength="60" placeholder="exemple@gmail.com"> <br><br>
+            <B>Mot de passe:</B> <input type="password" name="password" size="15" maxlength="30"> <br><br>
+            <B>Confirmer:</B> <input type="password" name="password" size="15" maxlength="30"> <br><br>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+            <button type="button" class="btn btn-primary">Enregistrer</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!---modal--------->
+  </nav>
+  <article>
+    <h1>Les films romantique </h1>
+  <div class="row row-cols-1 row-cols-md-3">
+    <div class="col mb-4">
+      <div class="card h-100">
+        <img src="images/romantique1.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">THE CHATEAU MEROUX</h5>
+          <p class="card-text">1h 45min / Romance<br>De:Bob Fugger<br>Avec:Marla Sokoloff, Barry Watson, Amanda Righetti<br>SYNOPSIS ET DÉTAILS:
+            Wendy hérite du vignoble de son père récemment décédé. Nathan, son voisin viticulteur, est intéressé par ces terres. Lorsque Wendy tombe amoureuse de Chris, un expert en vin, elle ne se doute pas que ce dernier est le fils de Nathan, qui a saboté l'une de ses cuves pour mettre en danger sa récolte, afin d'acheter son domaine à un prix moins élevé.</p>
+            <button type="button" class="btn btn-secondary">Regarder maintenant</button>
+            <button type="button" class="btn btn-success">Télécharger</button>
+          </div>
+      </div>
+    </div>
+    <div class="col mb-4">
+      <div class="card h-100">
+        <img src="images/romantique2.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">WORKING GIRL</h5>
+          <p class="card-text">1h 55min / Comédie, Drame<BR>De:Mike Nichols<BR>Avec:Melanie Griffith, Harrison Ford, Sigourney Weaver<BR>SYNOPSIS ET DÉTAILS:
+            Les aventures de Tess, jolie et intelligente employée de bureau, dans la jungle de Wall Street. Manipulée par des supérieurs machistes et Katherine, plus élégante qu'elle et au vernis culturel plus évident, elle parviendra néanmoins à tirer son épingle du jeu en abattant un à un les obstacles et en faisant preuve d'audace.</p>
+            <button type="button" class="btn btn-secondary">Regarder maintenant</button>
+            <button type="button" class="btn btn-success">Télécharger</button>
+          </div>
+      </div>
+    </div>
+    <div class="col mb-4">
+      <div class="card h-100">
+        <img src="images/romantique3.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">BEFORE SUNRISE</h5>
+          <p class="card-text"> 1h 41min / Romance<BR>De:Richard Linklater<BR>Avec:Ethan Hawke, Julie Delpy, Andrea Eckert<BR>SYNOPSIS ET DÉTAILS:
+            Jeune américain de passage en Europe, Jesse aborde Céline, étudiante française, dans un train entre Budapest et Vienne. A Vienne, il lui demande de descendre pour l'accompagner dans une visite de la ville pendant les 14 heures qui le séparent du décollage de son avion pour les Etats-Unis. Amusée, peut-être séduite, Céline accepte.</p>
+            <button type="button" class="btn btn-secondary">Regarder maintenant</button>
+            <button type="button" class="btn btn-success">Télécharger</button>
+          </div>
+      </div>
+    </div>
+    <div class="col mb-4">
+      <div class="card h-100">
+        <img src="images/romantique4.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">LET IT SNOW</h5>
+          <p class="card-text">Romance, Drame<BR>De:Luke Snellin<BR>Avec:Odeya Rush, Kiernan Shipka, Isabela Merced<BR>SYNOPSIS ET DÉTAILS:
+           
+            La veille de Noël, une tempête de neige bouleverse la vie et le futur d’un groupe de lycéens, lorsque des liens inattendus d’amour et d’amitié se créent dans des conditions exceptionnelles.</p>
+            <button type="button" class="btn btn-secondary">Regarder maintenant</button>
+            <button type="button" class="btn btn-success">Télécharger</button>
+          </div>
+      </div>
+    </div>
+    <div class="col mb-4">
+      <div class="card h-100">
+        <img src="images/romantique7.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">EVERYBODY LOVES SOMEBODY</h5>
+          <p class="card-text">1h 42min / Comédie, Romance<BR>De:Catalina Aguilar Mastretta<BR>Avec:Karla Souza, José Maria Yazpik, Ben O'Toole<BR>SYNOPSIS ET DÉTAILS:
+            En apparence, Clara Barron a tout ce qui lui faut : un job, une superbe maison à Los Angeles et une famille aimante. La seule chose qui lui manque est l'amour. Se rendant à un mariage au Mexique, Clara demande à l'un de ses collègues de se faire passer pour son petit ami durant les festivités du week-end. Mais elle se retrouve nez-à-nez avec son ex... Indécise, Clara doit choisir entre son passé, ou ouvrir son coeur à de nouvelles possibilités.</p>
+            <button type="button" class="btn btn-secondary">Regarder maintenant</button>
+            <button type="button" class="btn btn-success">Télécharger</button>
+          </div>
+      </div>
+    </div>
+    <div class="col mb-4">
+      <div class="card h-100">
+        <img src="images/romantique6.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">NOW IS GOOD</h5>
+          <p class="card-text"> 1h 43min / Drame, Romance<BR>De:Ol Parker<BR>Avec:Dakota Fanning, Jeremy Irvine, Paddy Considine<BR>SYNOPSIS ET DÉTAILS:
+            Le combat d'une jeune fille face à la maladie et à la mort, qui souhaite plus que tout découvrir l'amour.</p>
+            <button type="button" class="btn btn-secondary">Regarder maintenant</button>
+            <button type="button" class="btn btn-success">Télécharger</button>
+          </div>
+      </div>
+    </div>
+  </div>
+</article>
+</body>
+<footer>
+  <div id="Contact">
+    <h4>Contactez nous!</h4><br>
+    <i class="fa fa-phone"></i> 123 456-7890<br>
+    <i class="fa fa-envelope"></i> movieplanet@gmail.com<br>
+    <a href="#"><i class="fa fa-facebook"></i></a>
+    <a href="#"><i class="fa fa-instagram"></i></a>
+    <a href="#"><i class="fa fa-twitter"></i></a>
+    <a href="#"><i class="fa fa-youtube"></i></a>
+  </div>
+  <div class=footer-bottom>
+    &copy;Copyright Movie Planet-tous droits réservés
+  </div>
+</footer>
+
+</html>
